@@ -1,0 +1,10 @@
+@(names: Seq[String])
+
+    @main("Welcome to User") {
+        <h1>Welcome to User!</h1>
+        <ul>
+        @for(name <- names) {
+            <li>@name</li>
+        }
+        </ul>
+    }
